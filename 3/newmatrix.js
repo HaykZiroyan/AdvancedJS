@@ -6,23 +6,26 @@
 
 const matrix = [
     [1, 2, 3, 4, 5],
+    [7, 12, 5, 1, 9],
     [5, 6, 7, 8, 9],
     [3, 4, 9, 7, 2],
     [4, 8, 2, 6, 1],
-    [7, 4, 5, 1, 9],
   ];
   
   
   function change(obj, sum) {
     const newObj = [];
-    
-    for (let i = 0; i < obj.length; i++) {
-        sum = 0
-      for (let j = 0; j < obj.length; j++) {
-        sum +=  obj[j][i]
+    let objLenght = obj.length
+    let column = 0
+    let row = 0
+    for (let i = 1; i < objLenght; i++) {
+      
+      for (let j = 1; j < objLenght; j++) {
+        console.log(++column)
       }
-      console.log(sum)
     }
-    return newObj;
+  
+
+    return column
   }
-  console.log(change(matrix, 40));
+  console.log(change(matrix, 10));
