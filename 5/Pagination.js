@@ -12,10 +12,19 @@ const Pagination = {
     newArr : [], 
     currentPage: 0,
     init: function (str, counts) {
-        
+        this.newArr.length = Math.ceil(str/counts)
+        for(let i = 0; i <= this.newArr.length; i++ ) {
+            this.newArr[i] = []
+            for(let j = 0; j < counts; j++) {
+                if(!str[5 * i + j]) {
+                    break
+                }
+                this.newArr[i][j] = str[5 * i + j]
+            } 
+        }
     },
     getPageItems:function  () {
-
+        return this.newArr[this.currentPage]
     },
     nextPage: function() {
         if(this.currentPage < this.newArr.length - 1) {
@@ -38,5 +47,5 @@ Pagination.init(alphabetArray, 4);
 Pagination.getPageItems();
 Pagination.nextPage();
 Pagination.getPageItems();
-// Pagination.nextPage().nextPage();
+Pagination.nextPage().nextPage();
 Pagination.goToPage(3);

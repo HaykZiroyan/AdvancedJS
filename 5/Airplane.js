@@ -18,4 +18,4 @@ const Airplane = {
     }
 }
 
-console.log(Airplane.takeOff())
+console.log(Airplane.load())

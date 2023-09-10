@@ -17,3 +17,24 @@ const obj = {
 }
 
 console.log(f.myCall(obj, 5))
+
+
+
+const person = {
+    firstName:"John",
+    lastName: "Doe",
+}
+
+function fullName(obj) {
+    return obj.firstName + " " + obj.lastName;
+}
+
+function myBind(obj) {
+    return this(obj)
+}
+
+fullName.__proto__.myBind = myBind
+
+console.log(fullName.myBind(person))
+
+
