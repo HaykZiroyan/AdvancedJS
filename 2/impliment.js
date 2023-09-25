@@ -169,8 +169,7 @@ function someCheck(arr, func) {
 
 //map
 function mapToDo(elem) {
-  let changed = elem * 10
-  return changed
+  return elem * 10
 }
 
 function mapCheck(arr, func) {

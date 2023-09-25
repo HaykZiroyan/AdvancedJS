@@ -31,7 +31,7 @@ function sign(a,b,c) {
         '-Infinity': "-",
         'NaN': 'unsigned'
     }
-    num = a*b*c/0
+    let num = a*b*c/0
     return obj[num]
 }
 check = sign(5,-6,-5)

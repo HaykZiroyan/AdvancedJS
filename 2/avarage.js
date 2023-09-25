@@ -21,8 +21,8 @@ const users = [
     user.map(elem => {
         sum += elem.age
     })
-    let average = sum/user.length
-    return average
+   
+    return sum/user.length
   }
 
   console.log(getAverageAge(users));

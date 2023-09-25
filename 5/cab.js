@@ -36,5 +36,3 @@ function myBind(obj) {
 fullName.__proto__.myBind = myBind
 
 console.log(fullName.myBind(person))
-
-

@@ -20,5 +20,5 @@ function fib(n) {
     }
     return c
 }
-num = fib(20)
+let num = fib(20)
 console.log(num)

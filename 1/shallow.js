@@ -17,7 +17,6 @@ function shallowCompare(a, b) {
         if(comp == 0) return true
         return false
     }
-    // return bool
 }
 console.log(shallowCompare(a,b))
 
