@@ -29,3 +29,4 @@ function countdown(time) {
 }
 
 countdown("Jan 4, 2024 15:37:25")
+console.log(document.querySelector(".jjj"))
