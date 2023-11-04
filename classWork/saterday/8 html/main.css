@@ -1,0 +1,23 @@
+.top {
+  display: flex;
+  justify-content: space-between;
+}
+.top ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+.top ul li {
+  margin: 0 30px;
+}
+header img {
+  width: 100%;
+}
+.rows {
+  display: flex;
+  justify-content: space-between;
+}
+.form {
+  background-color: #c0b3b3;
+  padding: 10px 300px;
+}
